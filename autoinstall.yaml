@@ -2,14 +2,22 @@
 autoinstall:
     version: 1
     identity:
-        realname: 'Dionatan Simioni'
-        hostname: ubuntu-desktop
-        username: diolinux
-        password: '$y$j9T$uhkxlm8nUQaNu.6rl4k2d.$DIldpYy96OHg8lFjfXfc671BZcGWkPOmaDONGAhGSg3'
+        realname: 'Usuário RLS'
+        hostname: zropc
+        username: rls
+        password: '$y$j9T$8Uu4aXs.NK6TT3Ky0HgFw.$S1NiIhz8GBfNMWbEYV4PZrYHImEYj90PYNq2uSvmgTB'  # BBZro@2020
     locale: pt_BR.utf8
     keyboard:
         layout: br
-    timezone: "America/Sao_Paulo"   
+    timezone: "America/Sao_Paulo"
+    storage:
+        layout:
+            name: lvm
+        swap:
+            size: 0
+        encryption:
+            enabled: true
+            passphrase: 'caso remo doca loto ames toso'
     packages:
         - libreoffice
         - gimp
@@ -25,4 +33,3 @@ autoinstall:
         install: true
     updates: all
     shutdown: reboot
-
